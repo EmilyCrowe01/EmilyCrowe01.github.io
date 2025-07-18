@@ -465,7 +465,7 @@ html {
     .hero .container {
         background-size: 350px 400px;
         background-position: bottom;
-        height: 770px;
+        height: auto;
     }
 
     .hero .hero-content, .hero .hero-text {
@@ -496,7 +496,8 @@ html {
 
     .bio-text {
         text-align: left;
-        padding: 0%;
+        padding: 0 10px 20px 10px;
+        margin-bottom: 30px;
     }
 
     .app-grid {
@@ -522,6 +523,26 @@ html {
 
     .app-text-1, .app-text-2 {
         text-align: left;
+    }
+
+    .contact .contact-heading {
+        width: 100%;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .contanct .contact-text {
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-card {
+        text-align: center;
     }
 }
 
