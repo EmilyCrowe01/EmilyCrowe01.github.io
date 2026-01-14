@@ -398,6 +398,123 @@ html {
     padding: 20px;
 }
 
+/* Container Section */
+.support-hero {
+    display: flex;
+    justify-content: center; /* center the card horizontally */
+    padding: 3rem 1rem;
+    background: #f0f8f8;     /* subtle background for page */
+}
+
+/* Card */
+.support-card {
+    background-color: #82BDBD;       /* teal card */
+    color: #fff;
+    border-radius: 12px;
+    width: 700px;
+    max-width: 95%;
+    padding: 2.5rem 3rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;          /* stack content vertically */
+    align-items: center;
+    text-align: center;
+}
+
+/* Header */
+.support-header {
+    margin-bottom: 2rem;
+}
+
+.support-title {
+    font-size: 3rem;
+    margin: 0 0 0.5rem 0;
+    font-weight: 600;
+}
+
+.support-subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #f0f0f0;
+}
+
+/* Body Text */
+.support-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.support-text {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.support-email a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: underline;
+    word-break: break-word;
+    margin-bottom: 2rem;
+    display: inline-block;
+}
+
+/* Links Section Title */
+.support-links-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* PDF Buttons */
+.support-links {
+    display: flex;
+    flex-direction: column;  /* stack vertically */
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.support-pdf-button {
+    display: inline-block;
+    background-color: #008080;   /* teal button */
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s; /* fixed */
+    text-align: center;
+    min-width: 200px;
+}
+
+.support-pdf-button:hover {
+    background-color: #00b0b0;
+    /* transform: translateY(-2px); subtle lift on hover */
+}
+
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .support-card {
+        padding: 2rem;
+    }
+    .support-title {
+        font-size: 2.2rem;
+    }
+    .support-subtitle {
+        font-size: 1rem;
+    }
+    .support-text {
+        font-size: 1rem;
+    }
+    .support-links-title {
+        font-size: 1.3rem;
+    }
+}
+
+
+
 /* Hamburger Button */
 .hamburger-button {
     display: none;
