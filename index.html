@@ -1,202 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emily Crowe</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="images/favicon-new.png" type="image/x-icon"/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.85em' font-size='75' font-family='sans-serif' font-weight='700' fill='%239B6DFF'>E</text><text x='42' y='.85em' font-size='75' font-family='sans-serif' font-weight='700' fill='%23F0F0F0'>C</text></svg>" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        :root {
+            --page-accent: #9B6DFF;
+        }
+    </style>
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/eclogo.png" alt="logo">
-                </a>
-            </div>
-            <div class="main-menu">
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="index.html">About</a>
-                    </li>
-                    <li>
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#resume">Resume</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                    <li>
-                        <a href="ibsaidsupport.html">IBSAid Support</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Hamburger Button -->
-             <button class="hamburger-button">
-                <div class="hamburger-line"></div>
-                <div class="hamburger-line"></div>
-                <div class="hamburger-line"></div>
-             </button>
-             <div class="mobile-menu">
-                <ul>
-                    <li>
-                        <a href="index.html">About</a>
-                    </li>
-                    <li>
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#resume">Resume</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-             </div>
-        </div>
+    <nav>
+        <a class="nav-logo" href="#"><span>E</span>C</a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </nav>
-    <!-- Hero -->
-     <section class="hero">
-        <div class="container">
-            <div class="hero-header">
-                <h1 class="hero-heading text-xxl">
-                    Emily Crowe
-                </h1>
-                <p class="hero-text">
-                    iOS Developer · SwiftUI Programmer
-                </p>
-            </div>
 
-            <div class="hero-body">
-                <div class="headshot-container">
-                    <img src="images/square-headshot.jpg" alt="Headshot of Emily" class="circular-headshot">
-                </div>
-                <div class="bio-text">
-                    <p>
-                        Hello, I’m Emily Crowe, an iOS Developer with a passion for creating intuitive, satisfying user experiences. 
-                        I’m self-taught in Swift and SwiftUI, and I prioritize clean, efficient code and thoughtful user design. 
-                        My app designs focus on betterment and help for individuals looking for fun and simple ways to improve their lives. 
-                        I’m currently seeking an iOS Developer position where I can continue to grow, learn from others, and contribute meaningfully to impactful products. 
-                        In addition to coding, I’m also a composer and audio engineer. From composing to coding, I bring creativity and attention to detail to everything I build.
-                    </p>
-                </div>
-            </div>
-        </div>
-     </section>
+    <div class="mobile-menu" id="mobile-menu">
+        <ul>
+            <li><a href="#about" class="mobile-link">About</a></li>
+            <li><a href="#projects" class="mobile-link">Work</a></li>
+            <li><a href="#skills" class="mobile-link">Skills</a></li>
+            <li><a href="#contact" class="mobile-link">Contact</a></li>
+        </ul>
+    </div>
 
-     <hr class="section-divider" />
-
-     <!-- App Section -->
-      <section id="projects">
-        <div class="app bg-primary">
-            <div class="container">
-                <h2 class="app-heading text-xl text-center">
-                    Check out some of my work
-                </h2>
-
-                <div class="app-content">
-                    <div class="app-grid">
-                        <p class="app-text-1">
-                        Pawgress helps individuals by providing simple daily tasks to inspire users to better themselves in different aspects of life. As users progress, a virtual pet of their choice supports them at each task completion. The user unlocks special prizes for their pets, making daily life better for them and their furry friend.
-                        </p>
-                    <div class="app-box app-box-1">
-                        <!-- <h2>Pawgress</h2>
-                        <p>A 30 Goal tracker for pet lovers</p> -->
-                        <!-- <img src="images/pawgress-test1.png" alt="pawgress1"> -->
-                         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/UV41e9b2mx8?si=EY1iJHoxva_sgKW-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <a href="https://github.com/EmilyCrowe01/Pawgress" class="app-button" target="_blank">
-                            View on GitHub
-                        </a>
-                    </div>
-                    <div class="app-box app-box-2">
-                        <!-- <h2>IBS Aid</h2> -->
-                        <!-- <img src="images/ibs1.png" alt="ibs1"> -->
-                         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ud1NCPbbn-s?si=cOtNSMhVaGl4nOy-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <a href="https://apps.apple.com/us/app/ibsaid/id6757767192" class="app-button" target="_blank">
-                            Download on the App Store
-                        </a>
-                    </div>
-                    <p class="app-text-2">
-                        IBSAid is an app designed to support individuals with IBS by helping them track tolerable foods, manage symptoms, and focus on wellness through guided breathing. I hope to eventually expand it into a tool that facilitates communication between patients and specialists.
-                    </p>
-                    </div>
-                    <div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-      </section>
-     <!-- <hr class="section-divider" /> -->
-
-     <!-- Info Section -->
-      <section id="resume" class="info bg-primelight">
-        <div class="container">
-                <div class="card">
-                    <p>
-                        Resume
-                    </p>
-                    <img src="images/resume-emily-crowe.png" alt="resume" class="resume-size">
-                    <p>
-                        Download:
-                    </p>
-
-                        <a href="files/resume-emily-crowe.pdf" class="app-button" target="_blank">
-                            Resume PDF
-                        </a>
-                </div>
-        </div>
-      </section>
-    <hr class="section-divider-blue" />
-
-    <!-- Contact -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h3 class="contact-heading text-xl">
-                Contact Me!
-            </h3>
-            <p class="contact-text">
-                I'm always open to new opportunities, collaborations, or just to connect.
+    <section class="hero" id="home">
+        <div class="hero-inner">
+            <div class="hero-eyebrow">Available for hire</div>
+            <h1 id="hero-name"></h1>
+            <p class="hero-sub">Software developer who builds things that make people's lives a little easier.
             </p>
-            <div class="contact-grid">
-             <div class="contact-card">
-                <p>
-                    Email
-                </p>
-                <a href="mailto:emcatherine01@gmail.com?subject=Hello from your website" class="app-button">
-                    <i class="fas fa-envelope"></i> Email
-                </a>
-            </div>
-
-             <div class="contact-card">
-                <p>
-                    LinkedIn
-                </p>
-                <a href="https://www.linkedin.com/in/emily-crowe-5727b0256/" class="app-button">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
-            </div>
-
-             <div class="contact-card">
-                <p>
-                    GitHub
-                </p>
-                <a href="https://github.com/EmilyCrowe01" class="app-button">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-            </div>
+            <div class="hero-cta-row">
+                <a class="btn-primary" href="#projects">See my work</a>
+                <a class="btn-ghost" href="#contact">Get in touch</a>
             </div>
         </div>
     </section>
 
+    <section class="about" id="about">
+        <div class="section-label reveal">About</div>
+        <h2 class="section-title reveal">Developer. Designer.<br>Composer.</h2>
+        <div class="about-grid">
+            <img class="about-photo reveal" src="images/square-headshot.jpg" alt="Emily Crowe" />
+            <div class="about-text reveal">
+                <p>I'm <strong>Emily Crowe</strong>, a developer with a passion for creating intuitive, satisfying user experiences. I prioritize clean, efficient code and thoughtful user design.</p>
+                <p>My works focus on <strong>personal betterment</strong>, fun and simple tools that help people improve
+                    their lives in small ways every day. I’m currently looking for a software development role where I can continue to grow, learn from others, and contribute meaningfully to impactful products. </p>
+                <p>In addition to coding, I’m also a composer and audio engineer. From composing to coding, I bring creativity and attention to detail to everything I build.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="section-label reveal">Work</div>
+        <h2 class="section-title reveal">Things I've built</h2>
+        <div class="projects-list" id="projects-list"></div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="section-label reveal">Skills</div>
+        <h2 class="section-title reveal">What I work with</h2>
+        <div class="skills-grid" id="skills-grid"></div>
+    </section>
+
+    <section class="resume" id="resume">
+        <div class="resume-card">
+            <div class="resume-text">
+                <h3>Want to know more?</h3>
+                <p>Download my resume for education, experience, and everything in between.</p>
+            </div>
+            <a class="btn-primary" href="files/Emily Crowe Dev Resume.pdf" target="_blank">Download Resume</a>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="section-label reveal">Contact</div>
+        <h2 class="section-title reveal">Let's talk</h2>
+        <div class="contact-grid reveal">
+            <a class="contact-card" href="mailto: emcatherine01@gmail.com">
+                <span class="contact-label">Email</span>
+                <span class="contact-value">emcatherine01@gmail.com</span>
+            </a>
+            <a class="contact-card" href="https://www.linkedin.com/in/emily-crowe-5727b0256/" target="_blank">
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value">Emily Crowe</span>
+            </a>
+            <a class="contact-card" href="https://github.com/EmilyCrowe01" target="_blank">
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">EmilyCrowe01</span>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Built by Emily Crowe · 2025</p>
+    </footer>
+
+    <script src="js/projects.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
