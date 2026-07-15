@@ -2,121 +2,128 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Emily Crowe</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap"
-        rel="stylesheet" />
-    <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.85em' font-size='75' font-family='sans-serif' font-weight='700' fill='%239B6DFF'>E</text><text x='42' y='.85em' font-size='75' font-family='sans-serif' font-weight='700' fill='%23F0F0F0'>C</text></svg>" />
-    <link rel="stylesheet" href="css/style.css" />
-    <style>
-        :root {
-            --page-accent: #9B6DFF;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emily Crowe</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.85em' font-size='75' font-family='sans-serif' font-weight='700' fill='%239B6DFF'>E</text><text x='42' y='.85em' font-size='75' font-family='sans-serif' font-weight='700' fill='%23F0F0F0'>C</text></svg>" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    :root {
+      --page-accent: #9B6DFF;
+    }
+  </style>
 </head>
 
 <body>
-    <nav>
-        <a class="nav-logo" href="#"><span>E</span>C</a>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Work</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </nav>
+  <nav>
+    <a class="nav-logo" href="#"><span>E</span>C</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Work</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
 
-    <div class="mobile-menu" id="mobile-menu">
-        <ul>
-            <li><a href="#about" class="mobile-link">About</a></li>
-            <li><a href="#projects" class="mobile-link">Work</a></li>
-            <li><a href="#skills" class="mobile-link">Skills</a></li>
-            <li><a href="#contact" class="mobile-link">Contact</a></li>
-        </ul>
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#projects" class="mobile-link">Work</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-eyebrow">Available for hire</div>
+      <h1 id="hero-name"></h1>
+      <p class="hero-sub">Software developer who builds things that make people's lives a little easier.
+      </p>
+      <div class="hero-cta-row">
+        <a class="btn-primary" href="#projects">See my work</a>
+        <a class="btn-ghost" href="#contact">Get in touch</a>
+      </div>
     </div>
+  </section>
 
-    <section class="hero" id="home">
-        <div class="hero-inner">
-            <div class="hero-eyebrow">Available for hire</div>
-            <h1 id="hero-name"></h1>
-            <p class="hero-sub">Software developer who builds things that make people's lives a little easier.
-            </p>
-            <div class="hero-cta-row">
-                <a class="btn-primary" href="#projects">See my work</a>
-                <a class="btn-ghost" href="#contact">Get in touch</a>
-            </div>
-        </div>
-    </section>
+  <section class="about" id="about">
+    <div class="section-label reveal">About</div>
+    <h2 class="section-title reveal">Developer. Designer.<br>Composer.</h2>
+    <div class="about-grid">
+      <img class="about-photo reveal" src="images/square-headshot.jpg" alt="Emily Crowe" />
+      <div class="about-text reveal">
+        <p>I'm <strong>Emily Crowe</strong>, a developer with a passion for creating intuitive, satisfying user
+          experiences. I prioritize clean, efficient code and thoughtful user design.</p>
+        <p>My works focus on <strong>personal betterment</strong>, fun and simple tools that help people improve
+          their lives in small ways every day. I’m currently looking for a software development role where I can
+          continue to grow, learn from others, and contribute meaningfully to impactful products. </p>
+        <p>In addition to coding, I’m also a composer and audio engineer. From composing to coding, I bring creativity
+          and attention to detail to everything I build.</p>
+      </div>
+    </div>
+  </section>
 
-    <section class="about" id="about">
-        <div class="section-label reveal">About</div>
-        <h2 class="section-title reveal">Developer. Designer.<br>Composer.</h2>
-        <div class="about-grid">
-            <img class="about-photo reveal" src="images/square-headshot.jpg" alt="Emily Crowe" />
-            <div class="about-text reveal">
-                <p>I'm <strong>Emily Crowe</strong>, a developer with a passion for creating intuitive, satisfying user experiences. I prioritize clean, efficient code and thoughtful user design.</p>
-                <p>My works focus on <strong>personal betterment</strong>, fun and simple tools that help people improve
-                    their lives in small ways every day. I’m currently looking for a software development role where I can continue to grow, learn from others, and contribute meaningfully to impactful products. </p>
-                <p>In addition to coding, I’m also a composer and audio engineer. From composing to coding, I bring creativity and attention to detail to everything I build.</p>
-            </div>
-        </div>
-    </section>
+  <section class="projects" id="projects">
+    <div class="section-label reveal">Work</div>
+    <h2 class="section-title reveal">Things I've built</h2>
+    <div class="projects-list" id="projects-list"></div>
+  </section>
 
-    <section class="projects" id="projects">
-        <div class="section-label reveal">Work</div>
-        <h2 class="section-title reveal">Things I've built</h2>
-        <div class="projects-list" id="projects-list"></div>
-    </section>
+  <section class="skills" id="skills">
+    <div class="section-label reveal">Skills</div>
+    <h2 class="section-title reveal">What I work with</h2>
+    <div class="skills-grid" id="skills-grid"></div>
+  </section>
 
-    <section class="skills" id="skills">
-        <div class="section-label reveal">Skills</div>
-        <h2 class="section-title reveal">What I work with</h2>
-        <div class="skills-grid" id="skills-grid"></div>
-    </section>
+  <section class="resume" id="resume">
+    <div class="resume-card">
+      <div class="resume-text">
+        <h3>Want to know more?</h3>
+        <p>Download my resume for education, experience, and everything in between.</p>
+      </div>
+      <a class="btn-primary" href="files/Emily Crowe Dev Resume.pdf" target="_blank">Download Resume</a>
+    </div>
+  </section>
 
-    <section class="resume" id="resume">
-        <div class="resume-card">
-            <div class="resume-text">
-                <h3>Want to know more?</h3>
-                <p>Download my resume for education, experience, and everything in between.</p>
-            </div>
-            <a class="btn-primary" href="files/Emily Crowe Dev Resume.pdf" target="_blank">Download Resume</a>
-        </div>
-    </section>
+  <section class="contact" id="contact">
+    <div class="section-label reveal">Contact</div>
+    <h2 class="section-title reveal">Let's talk</h2>
+    <div class="contact-grid reveal">
+      <a class="contact-card" href="mailto: emcatherine01@gmail.com">
+        <span class="contact-label">Email</span>
+        <span class="contact-value">emcatherine01@gmail.com</span>
+      </a>
+      <a class="contact-card" href="https://www.linkedin.com/in/emily-crowe-5727b0256/" target="_blank">
+        <span class="contact-label">LinkedIn</span>
+        <span class="contact-value">Emily Crowe</span>
+      </a>
+      <a class="contact-card" href="https://github.com/EmilyCrowe01" target="_blank">
+        <span class="contact-label">GitHub</span>
+        <span class="contact-value">EmilyCrowe01</span>
+      </a>
+    </div>
+  </section>
 
-    <section class="contact" id="contact">
-        <div class="section-label reveal">Contact</div>
-        <h2 class="section-title reveal">Let's talk</h2>
-        <div class="contact-grid reveal">
-            <a class="contact-card" href="mailto: emcatherine01@gmail.com">
-                <span class="contact-label">Email</span>
-                <span class="contact-value">emcatherine01@gmail.com</span>
-            </a>
-            <a class="contact-card" href="https://www.linkedin.com/in/emily-crowe-5727b0256/" target="_blank">
-                <span class="contact-label">LinkedIn</span>
-                <span class="contact-value">Emily Crowe</span>
-            </a>
-            <a class="contact-card" href="https://github.com/EmilyCrowe01" target="_blank">
-                <span class="contact-label">GitHub</span>
-                <span class="contact-value">EmilyCrowe01</span>
-            </a>
-        </div>
-    </section>
+  <footer>
+    <p>Built by Emily Crowe · 2025</p>
+  </footer>
 
-    <footer>
-        <p>Built by Emily Crowe · 2025</p>
-    </footer>
-
-    <script src="js/projects.js"></script>
-    <script src="js/main.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
