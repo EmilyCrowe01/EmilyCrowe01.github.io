@@ -646,6 +646,33 @@ footer {
         opacity: 1;
         font-size: 0.6rem;
     }
+
+    @media (max-width: 600px) {
+        .card-hint {
+            opacity: 1;
+            font-size: 0.6rem;
+        }
+
+        .project-card {
+            position: relative;
+        }
+
+        .project-badge {
+            position: absolute;
+            top: 28px;
+            right: 28px;
+            max-width: 45%;
+            text-align: center;
+        }
+
+        .project-header {
+            margin-top: 12px;
+        }
+
+        .detail-header-top .project-badge {
+            display: none;
+        }
+    }
 }
 
 .support-page {
@@ -766,15 +793,15 @@ footer {
 }
 
 .detail-header {
-  flex: 1;
+    flex: 1;
 }
 
 .detail-header-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 8px;
 }
 
 .detail-hero-inner {
